@@ -16,4 +16,9 @@
 
 * main 함수를 disassemble 함.
     * 기계어 -> 어셈블리어 : disassemble
-    * 어셈블리어 -> 기계어 : assemble 
+    * 어셈블리어 -> 기계어 : assemble
+
+## gdb tool 설치
+
+* ```sudo apt-get update```
+* ```sudo apt-get install gdb```
