@@ -30,7 +30,8 @@ int main(int argc, char* argv[], char* envp[]){
 * main 함수의 인자 
     * argc 
         * main 함수에 전달되는 명령줄 인자의 개수
-        * ex)```./fd 4660```이면 2 ```./test arg1 arg2 arg3```이면 4
+        * ex)```./fd 4660```이면 2 
+          ex) ```./test arg1 arg2 arg3```이면 4
     * argv (포인터 배열)
         * main 함수에 전달되는 명령줄 인자의 배열
         * argv[1]은 프로그램의 이름이 저장됨
