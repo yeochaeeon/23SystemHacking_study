@@ -6,15 +6,17 @@
 #include <string.h>
 char buf[32]; // 전역변수 buf 선언 
 int main(int argc, char* argv[], char* envp[]){
-        if(argc<2){
+        if(argc<2){ // 명령줄에 명령어 1개만 입력시에 
                 printf("pass argv[1] a number\n");
                 return 0;
-        } // 실행할 때 인자가 없으면 해당 문장 출력 후 종료.
-          // 실행할 때 인자를 함께 입력값에 넣어주어야 함. 
-        int fd = atoi( argv[1] ) - 0x1234; //0 = 4660 - 4660
+        } // 실행할 때 프로그램명 외의 인자가 없으면 해당 문장 출력 후 종료.
+          // 실행할 때 프로그램명과 함께 인자를 입력값에 넣어주어야 함.
+
+        int fd = atoi( argv[1] ) - 0x1234; // 문자열을 정수형으로 변환
+                                           //0 = 4660 - 4660 
         int len = 0;
-        len = read(fd, buf, 32);
-        if(!strcmp("LETMEWIN\n", buf)){
+        len = read(fd, buf, 32); // fd 에 0 이 할당되면 buf 활성화 
+        if(!strcmp("LETMEWIN\n", buf)){ // 입력받은 값과 첫 매개변수 비교 같으면 1 다르면 0 반환
                 printf("good job :)\n");
                 system("/bin/cat flag");
                 exit(0);
