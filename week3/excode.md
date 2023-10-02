@@ -1,4 +1,4 @@
-## 시스템해킹 실습 예제 - pwnable #1_[fd]
+## 시스템해킹 실습 예제 - pwnable #1[fd]
 ```c
 
 #include <stdio.h>
