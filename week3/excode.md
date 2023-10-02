@@ -24,7 +24,12 @@ int main(int argc, char* argv[], char* envp[]){
  
 }
 
+
+
 ```
+
+<hr>
+
 ### 사전지식
 
 * main 함수의 인자 
@@ -67,6 +72,9 @@ int main(int argc, char* argv[], char* envp[]){
 * strcmp() 함수
     * 매개변수로 들어온 두 개의 문자열을 비교하여 같으면 0 , 다르면 1을 반환.
     * 위 코드에서는 ```!strcmp```라서 반대로 같으면 1, 다르면 0을 반환함.
+
+
+<hr>
 
 ### Solution 
 
