@@ -32,6 +32,7 @@ int main(int argc, char* argv[], char* envp[]){
     * 시스템으로부터 할당받은 파일을 대표하는 0이아닌 정수의 값.
     * 프로세스에서 실행되는 파일들의 목록을 관리해주는 테이블의 인덱스 값
     * | 번호 | 설명 | 이름 | 파일스트림 |
+      |-------|-----|-------|------------| 
       | 0 | 표준입력 | STDIN_FILENO | stdin |
       | 1 |표준출력 | STDOUT_FILENO | stdout |
       | 2 | 표준에러 | STDERR_FILENO | stderr |
