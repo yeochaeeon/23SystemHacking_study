@@ -1,10 +1,7 @@
 ## 시스템해킹 실습 예제 - pwnable #1[fd]
 
-``` pwnable 접속 ```
-<pre>
-    ```ssh fd@pwnable.kr -p2222```  
-    pw : guest
-</pre>
+``` pwnable 접속 ``` : ```ssh fd@pwnable.kr -p2222``` / ``` pw : guest ```
+
 
 
 ```c
