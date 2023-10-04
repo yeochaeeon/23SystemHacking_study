@@ -1,5 +1,6 @@
 ## 시스템해킹 실습 예제 - pwnable #1[fd]
 
+
 ``` pwnable 접속 ``` : ```ssh fd@pwnable.kr -p2222``` / ``` pw : guest ```
 
 
@@ -100,9 +101,4 @@ int main(int argc, char* argv[], char* envp[]){
 
 
 <hr>
-
-
-
-
-
 
