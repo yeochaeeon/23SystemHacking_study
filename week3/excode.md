@@ -65,7 +65,7 @@ int main(int argc, char* argv[], char* envp[]){
           ex) ```./test arg1 arg2 arg3```이면 4
     * argv (포인터 배열)
         * main 함수에 전달되는 명령줄 인자의 배열
-        * argv[1]은 프로그램의 이름이 저장됨
+        * argv[0]은 프로그램의 이름이 저장됨
         * 그 이후의 인덱스에는 명령줄에 전달한 각 인자들이 저장됨
         * 그래서 #solution 에서의 argv[1]에는 4660 이 저장됨
     * envp 
@@ -75,7 +75,7 @@ int main(int argc, char* argv[], char* envp[]){
 
 
 
-*  fd (file discriptor)
+*  fd (file descriptor)
     * 특정 파일에 대한 접근을 하기위한 handle로 사용되는 
     * 시스템으로부터 할당받은 파일을 대표하는 0이아닌 정수의 값.
     * 프로세스에서 실행되는 파일들의 목록을 관리해주는 테이블의 인덱스 값
