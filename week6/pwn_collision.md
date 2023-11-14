@@ -54,7 +54,7 @@ int main(int argc, char* argv[]){
 
 
 * ```flag : daddy! I just managed to create a hash collision :)```
-
+<hr>
 ### 사전지식 
 
 * little-endian 방식 입력
