@@ -53,7 +53,7 @@ int main(int argc, char* argv[]){
     ```./col `python -c 'print "\xC8\xCE\xC5\x06"*4+"\xcc\xce\xc5\x06"'` ```
 
 
-* ```flag : daddy! I just managed to create a hash collision :)```
+* flag : ```daddy! I just managed to create a hash collision :)```
 
 <hr>
 
