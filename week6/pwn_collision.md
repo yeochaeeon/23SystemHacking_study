@@ -1,4 +1,4 @@
-## pwnable #2[collision]
+## pwnable #2 [collision]
 
 ```ssh col@pwnable.kr -p2222 (pw:guest)```
 
@@ -24,7 +24,7 @@ int main(int argc, char* argv[]){
                 return 0;
         }
 
-        if(hashcode == check_password( argv[1] )){
+        if(hashcode == check_password( argv[1] )) {
                 system("/bin/cat flag");
                 return 0;
         }
