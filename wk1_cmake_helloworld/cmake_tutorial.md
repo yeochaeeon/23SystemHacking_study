@@ -68,5 +68,26 @@
 * ```add_executable()```
     * 생성할 실행 파일을 추가하는 명령이다.
     * argument : (만들 실행파일 이름 필요한 소스 나열...)
- 
-  
+<hr> 
+
+ ## 간단한 helloworld 프로젝트 구성해보기
+ * ```mkdir HelloWorld ```로 프로젝트 파일 생성
+ * ```cd HelloWorld ``` 
+    * " CMakeLists.txt " 파일 작성 
+      <pre>
+         cmake_minimum_required(VERSION 3.10)
+
+         # 프로젝트 이름과 사용할 언어 설정
+         project(HelloWorld LANGUAGES C)
+
+         # 실행 파일 생성을 위한 소스 파일 지정
+         add_executable(hello_world main.c)
+      </pre>
+    * " main.c " 소스코드 작성
+    * 빌드파일이 들어갈 " build " 디렉토리 만들기
+* ```cd build ``` 
+   * ``` cmake .. ```
+   * ``` make ```
+* ```./hello_world ``` 로 프로그램 실행.
+
+<hr> 
