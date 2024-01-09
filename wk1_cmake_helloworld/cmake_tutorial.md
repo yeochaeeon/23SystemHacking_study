@@ -37,6 +37,7 @@
 * 이후 ```make``` 명령어를 입력하면, 빌드가 진행됨.
 * Makefile 이 생성된 것을 볼 수 있다. 
 
+<hr>
 
 ## CMakeLists.txt 의 내용
 
