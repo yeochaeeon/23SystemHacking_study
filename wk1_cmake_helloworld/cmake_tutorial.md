@@ -68,6 +68,11 @@
 * ```add_executable()```
     * 생성할 실행 파일을 추가하는 명령이다.
     * argument : (만들 실행파일 이름 필요한 소스 나열...)
+
+* cmakelists.txt 파일의 옵션들
+    * ```target_compile_options( hello_world PUBLIC -g -Wall )``` : 파일이 가진 문제점에 관한 warning 메시지를 출력하게 하는 옵션.
+    * ```set_target_properties ( hello_world PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR} /bin )``` : 빌드가 완료된 실행파일을 바로 바이너리 디렉토리에 넣어줌. 
+    * 
 <hr> 
 
  ## 간단한 helloworld 프로젝트 구성해보기
