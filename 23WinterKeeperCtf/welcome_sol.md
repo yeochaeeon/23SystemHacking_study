@@ -1,5 +1,5 @@
 ## Welcome 
-### Q. "S0VFUEVSe1dlbGNvbWVfdG9fdGhlXzR0aF9LRUVQRVJfQ1RGfQ==" 를 해석하여 KEEPER{...} 형식의 플래그 찾기
+```Q. "S0VFUEVSe1dlbGNvbWVfdG9fdGhlXzR0aF9LRUVQRVJfQ1RGfQ==" 를 해석하여 KEEPER{...} 형식의 플래그 찾기```
 
 <hr>
 
@@ -17,7 +17,7 @@
 * 비트가 모자랄 때는 "="(padding) 문자를 사용해 채운다.
 * 인코딩 방법 : 문자열 -> ascii(decimal) -> binary -> 6bit cut -> decimal로 변환 -> base64 encode
 
-### + Encode or Decode base64 in python  
+> Encode or Decode base64 in python  
 * decode 
 ```python
 
@@ -48,7 +48,7 @@ print(encoded_data)
 
 ```
 
-### ++ Encode or Decode base64 in Ubuntu
+> Encode or Decode base64 in Ubuntu
 
 * Encode
     * ehco : ``` echo "important_message" | base64```
