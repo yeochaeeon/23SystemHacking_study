@@ -51,7 +51,7 @@ print(encoded_data)
 > Encode or Decode base64 in Ubuntu
 
 * Encode
-    * ehco : ``` echo "important_message" | base64```
+    * echo : ``` echo "important_message" | base64```
     * get input until press "ctrl + D" : ```base64```
 
 * Decode 
