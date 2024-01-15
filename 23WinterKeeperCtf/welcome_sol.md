@@ -17,7 +17,7 @@
 * 비트가 모자랄 때는 "="(padding) 문자를 사용해 채운다.
 * 인코딩 방법 : 문자열 -> ascii(decimal) -> binary -> 6bit cut -> decimal로 변환 -> base64 encode
 
-> Encode or Decode base64 in python  
+>> Encode or Decode base64 in python  
 * decode 
 ```python
 
