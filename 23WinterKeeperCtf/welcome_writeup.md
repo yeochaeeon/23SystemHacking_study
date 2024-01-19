@@ -24,7 +24,7 @@ Q. "S0VFUEVSe1dlbGNvbWVfdG9fdGhlXzR0aF9LRUVQRVJfQ1RGfQ==" 를 해석하여 KEEPE
 ## Tools 
 
 > ## Encode or Decode base64 in python  
-* decode 
+* Decoding code
 ```python
 
 import base64
@@ -37,7 +37,7 @@ print(decoded_text)
 
 ```
 
-* encode 
+* Encoding code
 ```python
 
 # -*- coding: utf-8 -*-
@@ -56,11 +56,11 @@ print(encoded_data)
 
 > ## Encode or Decode base64 in Ubuntu
 
-* Encode
+* Encodding Command
     * echo : ``` echo "important_message" | base64```
     * get input until press "ctrl + D" : ```base64```
 
-* Decode 
+* Decoding Command
     * echo : ```echo "aW1wb3J0YW50X21lc3NhZ2U="```
     * get input until press "ctrl + D " : ```base64 --decode```
 
