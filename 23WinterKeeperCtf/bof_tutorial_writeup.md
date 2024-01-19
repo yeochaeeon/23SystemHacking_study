@@ -38,7 +38,6 @@ int main( void )
 - 스택 구조의 가장 밑(높은 주소)에있는 RET 영역은 다음에 실행할 명령어의 주소를 담고있다.
 - 이 부분을 `get_shell` 함수의 주소로 덮으면 될 것 같다.
 - 이 프로그램을 실행할 때 스택의 구조는 아래와 같다.
-# ![스크린샷 2024-01-19 200142](https://github.com/yeochaeeon/23SystemHacking_study/assets/129289883/fa55ba9a-2619-41a5-b138-c64a14fc6c41){: width="100" height="100"}
 <img src="https://github.com/yeochaeeon/23SystemHacking_study/assets/129289883/fa55ba9a-2619-41a5-b138-c64a14fc6c41.png"  width="300" height="300"/>
 - `gets()` 함수로 입력을 받을 때 쓰레기 값으로 (16+8) byte를 채우고 그 뒤에 `get_shell` 함수의 주소를 입력하자.
 - `info func`  명령어를 사용하면 함수들의 정보를 확인 할 수 있다.
