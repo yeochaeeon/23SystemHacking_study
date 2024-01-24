@@ -18,7 +18,7 @@
 
 > ## 문법 변환 
 
-* 어셈블리 문법 변환 : `set disassembly-flavor att`(at&t) or `set disassembly-flavor intel`(intel)
+* 어셈블리 문법 변환 : `set disassembly-flavor att` (at&t) or `set disassembly-flavor intel` (intel)
 
 * 특정 문법으로 고정하고 싶을 때 
     * `echo "set disassembly-flavor att >> ~/.gdbinit`
