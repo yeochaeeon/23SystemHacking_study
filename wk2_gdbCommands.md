@@ -1,6 +1,6 @@
 # gdbCommands
 
-## gdb실행
+> ## gdb실행
 
 * gdb 실행 : `gdb ./test`
     * 프로세스 실행 : `r`
@@ -16,7 +16,7 @@
     * 실행 하다가 함수 내부로 진입하기 : `si`
 
 
-## 문법 변환 
+> ## 문법 변환 
 
 * 어셈블리 문법 변환 : `set disassembly-flavor att`(at&t) or `set disassembly-flavor intel`(intel)
 
