@@ -73,6 +73,12 @@ check변수를 원하는 값(0xdeadbeef)으로 덮을 수 있다.
 * 위 페이로드를 넣으면 `"Yeah dude! You win!\nOpening your shell...\n"` 라는 문구가 나오고
 * 이후 `ls -a` 명령어를 통해 .passwd파일을 확인할 수 있고 `cat` 명령어를 통해 password를 취할 수 있다.
 
+> assembly code 
 
+* fgets함수 호출 전 인자 세팅하는 구간 유의 
+* 마지막 인자부터 세팅됨
+* rdi rsi rdx rcx 얘는 뭐냐 ? 아하 ! 
+* 32비트 구조에서는 인자를 저장하는 레지스터가 따로 없으며 그냥 stack 에 push 됨. 
+* 
 
 
