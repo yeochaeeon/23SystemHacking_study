@@ -34,7 +34,7 @@ int main()
 ```
 <hr>
 
-### explanation
+### Explanation
 
 * 변수가 var -> check -> buf 순으로 선언되었기 때문에 
 * 위 코드에서 스택의 구조는 아래와 같다.
@@ -61,8 +61,7 @@ check변수를 원하는 값(0xdeadbeef)으로 덮을 수 있다.
 * 그러나 이대로 실행하면 "shell closed! Bye" 라는 문구가 출력되면서 쉘이 종료된다.
 * 이를 방지하기 위해 cat과 같이 shell 실행 후 입력을 받아주는 명령어를 추가하여 shell이 종료되지 않고 유지되게 해준다.
 * 명령어를 구분하는 구분자로 ";" 가 사용되므로 
-`(python -c 'print "A"*40 + "\xef\xbe\xad\xde"' ; cat) | ./ch13`
-위의 명령어가 최종 페이로드코드가 된다.
+`(python -c 'print "A"*40 + "\xef\xbe\xad\xde"' ; cat) | ./ch13` 가 최종 페이로드코드가 된다.
 
 * 위 페이로드를 넣으면 `"Yeah dude! You win!\nOpening your shell...\n"` 라는 문구가 나오고
 * `ls -a` 명령어를 통해 .passwd파일을 확인할 수 있고 `cat` 명령어를 통해 password를 취할 수 있다.
