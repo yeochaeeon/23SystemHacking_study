@@ -3,7 +3,8 @@
 > ### Access
 * `ssh -p 2222 app-systeme-ch13@challenge02.root-me.org`   
 * passwd : `app-systeme-ch13`
-
+> ### Download File to get assembly code
+* `scp -P2222 app-systeme-ch13@challenge02.root-me.org:./ch13 ./ch13`
 
 <hr>
 
