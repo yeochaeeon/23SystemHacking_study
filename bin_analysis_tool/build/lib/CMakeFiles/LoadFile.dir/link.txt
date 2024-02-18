@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLoadFile.a CMakeFiles/LoadFile.dir/LoadFile.o
+/usr/bin/ranlib libLoadFile.a

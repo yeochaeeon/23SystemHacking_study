@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build",
+  "command": "/usr/bin/cc  -I/home/chaeeon/23SystemHacking_study/bin_analysis_tool/include -g -Wall -o CMakeFiles/bin_analysis_tool.dir/bin_analysis_tool.o -c /home/chaeeon/23SystemHacking_study/bin_analysis_tool/bin_analysis_tool.c",
+  "file": "/home/chaeeon/23SystemHacking_study/bin_analysis_tool/bin_analysis_tool.c"
+},
+{
+  "directory": "/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/lib",
+  "command": "/usr/bin/cc   -g -Wall -o CMakeFiles/LoadFile.dir/LoadFile.o -c /home/chaeeon/23SystemHacking_study/bin_analysis_tool/lib/LoadFile.c",
+  "file": "/home/chaeeon/23SystemHacking_study/bin_analysis_tool/lib/LoadFile.c"
+}
+]
