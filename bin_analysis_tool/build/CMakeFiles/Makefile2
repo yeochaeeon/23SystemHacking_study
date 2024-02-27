@@ -64,46 +64,80 @@ CMAKE_BINARY_DIR = /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build
 
 # The main recursive "all" target.
 all: CMakeFiles/bin_analysis_tool.dir/all
-all: lib/all
+all: libs/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: lib/preinstall
+preinstall: libs/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/bin_analysis_tool.dir/clean
-clean: lib/clean
+clean: libs/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory lib
+# Directory level rules for directory libs
 
 # Recursive "all" directory target.
-lib/all: lib/CMakeFiles/LoadFile.dir/all
-.PHONY : lib/all
+libs/all: libs/LoadBinaryFile/all
+libs/all: libs/ELFanalysis/all
+.PHONY : libs/all
 
 # Recursive "preinstall" directory target.
-lib/preinstall:
-.PHONY : lib/preinstall
+libs/preinstall: libs/LoadBinaryFile/preinstall
+libs/preinstall: libs/ELFanalysis/preinstall
+.PHONY : libs/preinstall
 
 # Recursive "clean" directory target.
-lib/clean: lib/CMakeFiles/LoadFile.dir/clean
-.PHONY : lib/clean
+libs/clean: libs/LoadBinaryFile/clean
+libs/clean: libs/ELFanalysis/clean
+.PHONY : libs/clean
+
+#=============================================================================
+# Directory level rules for directory libs/ELFanalysis
+
+# Recursive "all" directory target.
+libs/ELFanalysis/all: libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/all
+.PHONY : libs/ELFanalysis/all
+
+# Recursive "preinstall" directory target.
+libs/ELFanalysis/preinstall:
+.PHONY : libs/ELFanalysis/preinstall
+
+# Recursive "clean" directory target.
+libs/ELFanalysis/clean: libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/clean
+.PHONY : libs/ELFanalysis/clean
+
+#=============================================================================
+# Directory level rules for directory libs/LoadBinaryFile
+
+# Recursive "all" directory target.
+libs/LoadBinaryFile/all: libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/all
+.PHONY : libs/LoadBinaryFile/all
+
+# Recursive "preinstall" directory target.
+libs/LoadBinaryFile/preinstall:
+.PHONY : libs/LoadBinaryFile/preinstall
+
+# Recursive "clean" directory target.
+libs/LoadBinaryFile/clean: libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/clean
+.PHONY : libs/LoadBinaryFile/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/bin_analysis_tool.dir
 
 # All Build rule for target.
-CMakeFiles/bin_analysis_tool.dir/all:
+CMakeFiles/bin_analysis_tool.dir/all: libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/all
+CMakeFiles/bin_analysis_tool.dir/all: libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bin_analysis_tool.dir/build.make CMakeFiles/bin_analysis_tool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bin_analysis_tool.dir/build.make CMakeFiles/bin_analysis_tool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles --progress-num=3,4 "Built target bin_analysis_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles --progress-num=5,6 "Built target bin_analysis_tool"
 .PHONY : CMakeFiles/bin_analysis_tool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bin_analysis_tool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bin_analysis_tool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 0
 .PHONY : CMakeFiles/bin_analysis_tool.dir/rule
@@ -118,30 +152,56 @@ CMakeFiles/bin_analysis_tool.dir/clean:
 .PHONY : CMakeFiles/bin_analysis_tool.dir/clean
 
 #=============================================================================
-# Target rules for target lib/CMakeFiles/LoadFile.dir
+# Target rules for target libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir
 
 # All Build rule for target.
-lib/CMakeFiles/LoadFile.dir/all:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LoadFile.dir/build.make lib/CMakeFiles/LoadFile.dir/depend
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LoadFile.dir/build.make lib/CMakeFiles/LoadFile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles --progress-num=1,2 "Built target LoadFile"
-.PHONY : lib/CMakeFiles/LoadFile.dir/all
+libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/build.make libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/build.make libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles --progress-num=3,4 "Built target LoadBinaryFile"
+.PHONY : libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/all
 
 # Build rule for subdir invocation for target.
-lib/CMakeFiles/LoadFile.dir/rule: cmake_check_build_system
+libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/LoadFile.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 0
-.PHONY : lib/CMakeFiles/LoadFile.dir/rule
+.PHONY : libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/rule
 
 # Convenience name for target.
-LoadFile: lib/CMakeFiles/LoadFile.dir/rule
-.PHONY : LoadFile
+LoadBinaryFile: libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/rule
+.PHONY : LoadBinaryFile
 
 # clean rule for target.
-lib/CMakeFiles/LoadFile.dir/clean:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LoadFile.dir/build.make lib/CMakeFiles/LoadFile.dir/clean
-.PHONY : lib/CMakeFiles/LoadFile.dir/clean
+libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/build.make libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/clean
+.PHONY : libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/clean
+
+#=============================================================================
+# Target rules for target libs/ELFanalysis/CMakeFiles/ELFanalysis.dir
+
+# All Build rule for target.
+libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/build.make libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/build.make libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles --progress-num=1,2 "Built target ELFanalysis"
+.PHONY : libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/all
+
+# Build rule for subdir invocation for target.
+libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles 0
+.PHONY : libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/rule
+
+# Convenience name for target.
+ELFanalysis: libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/rule
+.PHONY : ELFanalysis
+
+# clean rule for target.
+libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/build.make libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/clean
+.PHONY : libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

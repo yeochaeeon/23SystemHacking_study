@@ -1,1 +1,1 @@
-/usr/bin/cc -rdynamic CMakeFiles/bin_analysis_tool.dir/bin_analysis_tool.o -o bin/bin_analysis_tool  -lLoadBinaryFile 
+/usr/bin/cc -rdynamic CMakeFiles/bin_analysis_tool.dir/bin_analysis_tool.o -o bin/bin_analysis_tool  libs/LoadBinaryFile/libLoadBinaryFile.a libs/ELFanalysis/libELFanalysis.a 

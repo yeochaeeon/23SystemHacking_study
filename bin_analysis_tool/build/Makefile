@@ -130,17 +130,30 @@ bin_analysis_tool/fast:
 .PHONY : bin_analysis_tool/fast
 
 #=============================================================================
-# Target rules for targets named LoadFile
+# Target rules for targets named LoadBinaryFile
 
 # Build rule for target.
-LoadFile: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LoadFile
-.PHONY : LoadFile
+LoadBinaryFile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LoadBinaryFile
+.PHONY : LoadBinaryFile
 
 # fast build rule for target.
-LoadFile/fast:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LoadFile.dir/build.make lib/CMakeFiles/LoadFile.dir/build
-.PHONY : LoadFile/fast
+LoadBinaryFile/fast:
+	$(MAKE) $(MAKESILENT) -f libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/build.make libs/LoadBinaryFile/CMakeFiles/LoadBinaryFile.dir/build
+.PHONY : LoadBinaryFile/fast
+
+#=============================================================================
+# Target rules for targets named ELFanalysis
+
+# Build rule for target.
+ELFanalysis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ELFanalysis
+.PHONY : ELFanalysis
+
+# fast build rule for target.
+ELFanalysis/fast:
+	$(MAKE) $(MAKESILENT) -f libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/build.make libs/ELFanalysis/CMakeFiles/ELFanalysis.dir/build
+.PHONY : ELFanalysis/fast
 
 # target to build an object file
 bin_analysis_tool.o:
@@ -165,7 +178,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LoadFile"
+	@echo "... ELFanalysis"
+	@echo "... LoadBinaryFile"
 	@echo "... bin_analysis_tool"
 	@echo "... bin_analysis_tool.o"
 	@echo "... bin_analysis_tool.i"

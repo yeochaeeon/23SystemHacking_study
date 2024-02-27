@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/lib/cmake_install.cmake")
+  include("/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/libs/cmake_install.cmake")
 
 endif()
 

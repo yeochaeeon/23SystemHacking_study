@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLoadBinaryFile.a CMakeFiles/LoadBinaryFile.dir/LoadBinaryFile.o
+/usr/bin/ranlib libLoadBinaryFile.a

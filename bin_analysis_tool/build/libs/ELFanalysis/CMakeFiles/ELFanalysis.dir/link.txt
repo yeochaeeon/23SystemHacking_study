@@ -1,0 +1,2 @@
+/usr/bin/ar qc libELFanalysis.a CMakeFiles/ELFanalysis.dir/ELFanalysis.o
+/usr/bin/ranlib libELFanalysis.a

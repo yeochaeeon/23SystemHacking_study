@@ -92,6 +92,8 @@ bin_analysis_tool_EXTERNAL_OBJECTS =
 
 bin/bin_analysis_tool: CMakeFiles/bin_analysis_tool.dir/bin_analysis_tool.o
 bin/bin_analysis_tool: CMakeFiles/bin_analysis_tool.dir/build.make
+bin/bin_analysis_tool: libs/LoadBinaryFile/libLoadBinaryFile.a
+bin/bin_analysis_tool: libs/ELFanalysis/libELFanalysis.a
 bin/bin_analysis_tool: CMakeFiles/bin_analysis_tool.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chaeeon/23SystemHacking_study/bin_analysis_tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable bin/bin_analysis_tool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bin_analysis_tool.dir/link.txt --verbose=$(VERBOSE)
